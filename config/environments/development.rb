@@ -1,5 +1,9 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
+  
+  #Whitelisting my network IP and turn off notification
+  config.web_console.whitelisted_ips = '73.29.117.159' 
+  config.web_console.whiny_requests = false
 
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
